@@ -1,0 +1,5 @@
+[user]
+	name = Ashay Rane
+	email = ashay.rane@utexas.edu
+[pull]
+	rebase = true
