@@ -11,6 +11,7 @@ set autoindent
 set copyindent        " copy indent from the previous line
 set autoread          " automatically read file when it changes
 set foldmethod=syntax " auto fold
+set guicursor=        " don't replace the existing cursor
 
 call plug#begin()
 Plug 'morhetz/gruvbox'
