@@ -2,7 +2,7 @@ function fish_greeting
 end
 
 function fish_prompt
-  echo "docker > "
+  echo "local > "
 end
 
 function fish_right_prompt
