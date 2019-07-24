@@ -18,14 +18,26 @@ function pat
 end
 
 function cg
-  pat ~/Dropbox/coon/$argv | tr -d '\n' | pbcopy
+  pat ~/Sync/coon/$argv | /usr/bin/tr -d '\n' | /usr/bin/pbcopy
 end
 
 function cm
-  ped ~/Dropbox/coon/$argv
+  ped ~/Sync/coon/$argv
 end
 
-set options (ls ~/Dropbox/coon/)
+function gpass
+  /usr/local/bin/pwgen -nys $argv 1 | /usr/bin/tr -d '\n' | /usr/bin/pbcopy
+end
+
+function nmutt-prime
+  /usr/local/bin/neomutt -F ~/.config/neomutt/prime.muttrc
+end
+
+function nmutt-utexas
+  /usr/local/bin/neomutt -F ~/.config/neomutt/utexas.muttrc
+end
+
+set options (ls ~/Sync/coon/)
 complete --command cg --no-files --exclusive --arguments "$options"
 complete --command cm --no-files --exclusive --arguments "$options"
 
