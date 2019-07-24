@@ -1,0 +1,8 @@
+set timeout = 15
+set beep_new = yes
+set mail_check = 90
+set ssl_starttls = yes
+set ssl_force_tls = yes
+set smtp_authenticators = "plain"
+
+# vim: filetype=muttrc

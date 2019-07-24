@@ -1,0 +1,7 @@
+source generic-options.muttrc
+source display-options.muttrc
+
+source key-bindings.muttrc
+source color-scheme.muttrc
+
+# vim: filetype=muttrc

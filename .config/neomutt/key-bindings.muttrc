@@ -1,0 +1,11 @@
+bind index,pager  j         sidebar-next
+bind index,pager  k         sidebar-prev
+bind index,pager  <right>   sidebar-open
+bind index        <space>   collapse-thread
+bind index        i         imap-fetch-mail
+bind index        g         first-entry
+bind index        G         last-entry
+bind index        R         group-reply
+bind index,pager  S         sidebar-toggle-visible
+
+# vim: filetype=muttrc

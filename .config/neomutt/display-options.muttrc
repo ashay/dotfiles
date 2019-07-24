@@ -1,0 +1,40 @@
+set sort = reverse-date
+set sort_aux = last-date-received
+
+set imap_check_subscribed = yes
+
+# Enable extended mailbox mode to calculate total, new, and flagged message counts for each mailbox.
+set mail_check_stats
+
+set sidebar_visible = yes
+set sidebar_width = 24
+set sidebar_short_path = yes
+
+# Number of top-level mailbox path subdirectories to truncate for display
+set sidebar_component_depth = 0
+set sidebar_delim_chars = '/.'
+
+# Make the Sidebar only display mailboxes that contain new, or flagged, mail.
+set sidebar_new_mail_only = no
+
+# When searching for mailboxes containing new mail, should the search wrap around when it reaches the end of the list?
+set sidebar_next_new_wrap = no
+
+set sidebar_on_right = no
+set sidebar_divider_char = '|'
+
+# Display the Sidebar mailboxes using this format string.
+set sidebar_format = '%B %* %?N?[%N]?'
+
+# Sort the mailboxes in the Sidebar using this method:
+#       count    – total number of messages
+#       flagged  – number of flagged messages
+#       new      – number of new messages
+#       path     – mailbox path
+#       unsorted – do not sort the mailboxes
+set sidebar_sort_method = 'path'
+
+set sort = 'threads'
+set sort_aux = 'reverse-date-received'
+
+# vim: filetype=muttrc
