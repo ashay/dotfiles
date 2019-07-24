@@ -42,3 +42,4 @@ complete --command cg --no-files --exclusive --arguments "$options"
 complete --command cm --no-files --exclusive --arguments "$options"
 
 set -g -x EDITOR nvim
+set -g -x PATH $PATH /Users/klaus/Library/Python/3.7/bin/
