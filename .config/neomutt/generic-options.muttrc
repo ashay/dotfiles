@@ -1,3 +1,4 @@
+set copy = no
 set timeout = 15
 set beep_new = yes
 set mail_check = 90
