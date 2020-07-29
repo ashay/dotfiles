@@ -1,4 +1,3 @@
-set t_Co=256          " 256 color mode in term
 set cc=78             " Highlight column at 78
 set textwidth=78      " Wrap at column 78
 map <C-x> <C-w><C-w>
