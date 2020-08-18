@@ -227,3 +227,6 @@ bindsym --release Print exec /usr/bin/scrot 'screenshot_%Y%m%d_%H%M%S.png' -e 'm
 
 # OSX-like area selection screenshots
 bindsym --release Shift+Print exec /usr/bin/scrot -s 'screenshot_%Y%m%d_%H%M%S.png' -e 'mkdir -p ~/screenshots && mv $f ~/screenshots && xclip -selection clipboard -t image/png -i ~/screenshots/`ls -1 -t ~/screenshots | head -1`' # Area selection
+
+# Set the compose key
+exec --no-startup-id setxkbmap -option compose:ralt
