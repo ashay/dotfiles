@@ -19,5 +19,3 @@ set -g -x LS_COLORS "bd=0;38;2;102;217;239;48;2;51;51;51:cd=0;38;2;249;38;114;48
 
 # opam configuration
 source /home/klaus/.opam/opam-init/init.fish > /dev/null 2> /dev/null; or true
-set -q GHCUP_INSTALL_BASE_PREFIX[1]; or set GHCUP_INSTALL_BASE_PREFIX $HOME
-test -f $GHCUP_INSTALL_BASE_PREFIX/.ghcup/env ; and set -gx PATH $HOME/.cabal/bin $GHCUP_INSTALL_BASE_PREFIX/.ghcup/bin $PATH
