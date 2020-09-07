@@ -1,4 +1,5 @@
-set my_pass = `~/src/panther/panther cat ~/Sync/coon/mutt-utexas | /usr/bin/tr -d '\n'`
+# set my_pass = `~/src/panther/panther cat ~/Sync/coon/mutt-utexas | /usr/bin/tr -d '\n'`
+set my_pass = `fish -c "dump-pass neomutt-utmail"`
 
 set realname = "Ashay Rane"
 set from = "ashay.rane@utexas.edu"

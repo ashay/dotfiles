@@ -10,12 +10,169 @@ function fish_right_prompt
 end
 
 set -g -x EDITOR nvim
-set -g -x PATH $HOME/.cargo/bin $PATH $HOME/apps/bin $HOME/.local/bin
+set -g -x PATH $HOME/apps/go/bin $PATH $HOME/apps/bin
 
 alias audio-hdmi="pacmd set-card-profile 0 output:hdmi-stereo+input:analog-stereo"
 alias audio-laptop="pacmd set-card-profile 0 output:analog-stereo+input:analog-stereo"
 
-set -g -x LS_COLORS "bd=0;38;2;102;217;239;48;2;51;51;51:cd=0;38;2;249;38;114;48;2;51;51;51:so=0;38;2;0;0;0;48;2;249;38;114:ln=0;38;2;249;38;114:ex=1;38;2;249;38;114:fi=0:or=0;38;2;0;0;0;48;2;255;74;68:pi=0;38;2;0;0;0;48;2;102;217;239:mi=0;38;2;0;0;0;48;2;255;74;68:no=0:di=0;38;2;102;217;239:*~=0;38;2;122;112;112:*.p=0;38;2;0;255;135:*.t=0;38;2;0;255;135:*.h=0;38;2;0;255;135:*.a=1;38;2;249;38;114:*.c=0;38;2;0;255;135:*.d=0;38;2;0;255;135:*.r=0;38;2;0;255;135:*.m=0;38;2;0;255;135:*.z=4;38;2;249;38;114:*.o=0;38;2;122;112;112:*.ex=0;38;2;0;255;135:*.go=0;38;2;0;255;135:*.vb=0;38;2;0;255;135:*.rm=0;38;2;253;151;31:*.cp=0;38;2;0;255;135:*.cr=0;38;2;0;255;135:*.ml=0;38;2;0;255;135:*.pl=0;38;2;0;255;135:*.sh=0;38;2;0;255;135:*.mn=0;38;2;0;255;135:*.md=0;38;2;226;209;57:*.la=0;38;2;122;112;112:*.hh=0;38;2;0;255;135:*.as=0;38;2;0;255;135:*.kt=0;38;2;0;255;135:*.7z=4;38;2;249;38;114:*.bc=0;38;2;122;112;112:*.so=1;38;2;249;38;114:*.jl=0;38;2;0;255;135:*.pp=0;38;2;0;255;135:*.hi=0;38;2;122;112;112:*.gz=4;38;2;249;38;114:*.nb=0;38;2;0;255;135:*.fs=0;38;2;0;255;135:*.cs=0;38;2;0;255;135:*.rb=0;38;2;0;255;135:*.ll=0;38;2;0;255;135:*.lo=0;38;2;122;112;112:*.xz=4;38;2;249;38;114:*.hs=0;38;2;0;255;135:*.ko=1;38;2;249;38;114:*.el=0;38;2;0;255;135:*.gv=0;38;2;0;255;135:*.di=0;38;2;0;255;135:*.py=0;38;2;0;255;135:*.td=0;38;2;0;255;135:*.js=0;38;2;0;255;135:*.ps=0;38;2;230;219;116:*.cc=0;38;2;0;255;135:*.bz=4;38;2;249;38;114:*.ui=0;38;2;166;226;46:*css=0;38;2;0;255;135:*.ts=0;38;2;0;255;135:*.pm=0;38;2;0;255;135:*.rs=0;38;2;0;255;135:*.vim=0;38;2;0;255;135:*.jpg=0;38;2;253;151;31:*.def=0;38;2;0;255;135:*.wmv=0;38;2;253;151;31:*.wma=0;38;2;253;151;31:*.pro=0;38;2;166;226;46:*.yml=0;38;2;166;226;46:*.ltx=0;38;2;0;255;135:*.fsi=0;38;2;0;255;135:*.ogg=0;38;2;253;151;31:*.mp3=0;38;2;253;151;31:*.pbm=0;38;2;253;151;31:*.mp4=0;38;2;253;151;31:*.exe=1;38;2;249;38;114:*.bcf=0;38;2;122;112;112:*.nix=0;38;2;166;226;46:*.htc=0;38;2;0;255;135:*.apk=4;38;2;249;38;114:*.dll=1;38;2;249;38;114:*.pyc=0;38;2;122;112;112:*.git=0;38;2;122;112;112:*.bib=0;38;2;166;226;46:*.txt=0;38;2;226;209;57:*TODO=1:*.sxw=0;38;2;230;219;116:*.ind=0;38;2;122;112;112:*.tar=4;38;2;249;38;114:*.pid=0;38;2;122;112;112:*.csv=0;38;2;226;209;57:*.ods=0;38;2;230;219;116:*.dpr=0;38;2;0;255;135:*.out=0;38;2;122;112;112:*.bz2=4;38;2;249;38;114:*.bbl=0;38;2;122;112;112:*.gif=0;38;2;253;151;31:*.tcl=0;38;2;0;255;135:*.bak=0;38;2;122;112;112:*.sql=0;38;2;0;255;135:*.ini=0;38;2;166;226;46:*.xmp=0;38;2;166;226;46:*.fls=0;38;2;122;112;112:*.xls=0;38;2;230;219;116:*.vob=0;38;2;253;151;31:*.vcd=4;38;2;249;38;114:*.flv=0;38;2;253;151;31:*.swf=0;38;2;253;151;31:*.cfg=0;38;2;166;226;46:*.kex=0;38;2;230;219;116:*.ps1=0;38;2;0;255;135:*.hpp=0;38;2;0;255;135:*.zsh=0;38;2;0;255;135:*.ppt=0;38;2;230;219;116:*.odp=0;38;2;230;219;116:*.pas=0;38;2;0;255;135:*.cgi=0;38;2;0;255;135:*.ico=0;38;2;253;151;31:*.xcf=0;38;2;253;151;31:*.mid=0;38;2;253;151;31:*.pdf=0;38;2;230;219;116:*.tbz=4;38;2;249;38;114:*.mpg=0;38;2;253;151;31:*.doc=0;38;2;230;219;116:*.elm=0;38;2;0;255;135:*.ilg=0;38;2;122;112;112:*.bst=0;38;2;166;226;46:*.ttf=0;38;2;253;151;31:*.dot=0;38;2;0;255;135:*.sty=0;38;2;122;112;112:*.awk=0;38;2;0;255;135:*.img=4;38;2;249;38;114:*.tex=0;38;2;0;255;135:*.wav=0;38;2;253;151;31:*.xml=0;38;2;226;209;57:*.c++=0;38;2;0;255;135:*.gvy=0;38;2;0;255;135:*.swp=0;38;2;122;112;112:*.tgz=4;38;2;249;38;114:*.jar=4;38;2;249;38;114:*.png=0;38;2;253;151;31:*.odt=0;38;2;230;219;116:*.tsx=0;38;2;0;255;135:*.aif=0;38;2;253;151;31:*.aux=0;38;2;122;112;112:*.mir=0;38;2;0;255;135:*.m4v=0;38;2;253;151;31:*.arj=4;38;2;249;38;114:*.inl=0;38;2;0;255;135:*.pod=0;38;2;0;255;135:*.cxx=0;38;2;0;255;135:*.pps=0;38;2;230;219;116:*.csx=0;38;2;0;255;135:*.mov=0;38;2;253;151;31:*.asa=0;38;2;0;255;135:*.epp=0;38;2;0;255;135:*.dmg=4;38;2;249;38;114:*.bsh=0;38;2;0;255;135:*.toc=0;38;2;122;112;112:*.fsx=0;38;2;0;255;135:*.hxx=0;38;2;0;255;135:*.htm=0;38;2;226;209;57:*.rpm=4;38;2;249;38;114:*.svg=0;38;2;253;151;31:*.clj=0;38;2;0;255;135:*.ics=0;38;2;230;219;116:*.cpp=0;38;2;0;255;135:*.sbt=0;38;2;0;255;135:*.idx=0;38;2;122;112;112:*hgrc=0;38;2;166;226;46:*.bag=4;38;2;249;38;114:*.tml=0;38;2;166;226;46:*.otf=0;38;2;253;151;31:*.zip=4;38;2;249;38;114:*.blg=0;38;2;122;112;112:*.deb=4;38;2;249;38;114:*.xlr=0;38;2;230;219;116:*.bmp=0;38;2;253;151;31:*.rar=4;38;2;249;38;114:*.php=0;38;2;0;255;135:*.mli=0;38;2;0;255;135:*.iso=4;38;2;249;38;114:*.tif=0;38;2;253;151;31:*.log=0;38;2;122;112;112:*.com=1;38;2;249;38;114:*.mkv=0;38;2;253;151;31:*.sxi=0;38;2;230;219;116:*.fon=0;38;2;253;151;31:*.lua=0;38;2;0;255;135:*.pkg=4;38;2;249;38;114:*.bin=4;38;2;249;38;114:*.bat=1;38;2;249;38;114:*.ipp=0;38;2;0;255;135:*.erl=0;38;2;0;255;135:*.rst=0;38;2;226;209;57:*.dox=0;38;2;166;226;46:*.pgm=0;38;2;253;151;31:*.fnt=0;38;2;253;151;31:*.rtf=0;38;2;230;219;116:*.avi=0;38;2;253;151;31:*.exs=0;38;2;0;255;135:*.tmp=0;38;2;122;112;112:*.ppm=0;38;2;253;151;31:*.inc=0;38;2;0;255;135:*.h++=0;38;2;0;255;135:*.kts=0;38;2;0;255;135:*.yaml=0;38;2;166;226;46:*.lock=0;38;2;122;112;112:*.html=0;38;2;226;209;57:*.tbz2=4;38;2;249;38;114:*.rlib=0;38;2;122;112;112:*.json=0;38;2;166;226;46:*.jpeg=0;38;2;253;151;31:*.dart=0;38;2;0;255;135:*.h264=0;38;2;253;151;31:*.toml=0;38;2;166;226;46:*.psd1=0;38;2;0;255;135:*.purs=0;38;2;0;255;135:*.less=0;38;2;0;255;135:*.psm1=0;38;2;0;255;135:*.lisp=0;38;2;0;255;135:*.flac=0;38;2;253;151;31:*.mpeg=0;38;2;253;151;31:*.hgrc=0;38;2;166;226;46:*.conf=0;38;2;166;226;46:*.make=0;38;2;166;226;46:*.fish=0;38;2;0;255;135:*.java=0;38;2;0;255;135:*.diff=0;38;2;0;255;135:*.orig=0;38;2;122;112;112:*.pptx=0;38;2;230;219;116:*.docx=0;38;2;230;219;116:*.epub=0;38;2;230;219;116:*.xlsx=0;38;2;230;219;116:*.bash=0;38;2;0;255;135:*.class=0;38;2;122;112;112:*.mdown=0;38;2;226;209;57:*passwd=0;38;2;166;226;46:*.toast=4;38;2;249;38;114:*shadow=0;38;2;166;226;46:*.swift=0;38;2;0;255;135:*.scala=0;38;2;0;255;135:*.ipynb=0;38;2;0;255;135:*.xhtml=0;38;2;226;209;57:*.patch=0;38;2;0;255;135:*.cabal=0;38;2;0;255;135:*.dyn_o=0;38;2;122;112;112:*README=0;38;2;0;0;0;48;2;230;219;116:*.cmake=0;38;2;166;226;46:*.cache=0;38;2;122;112;112:*.shtml=0;38;2;226;209;57:*.dyn_hi=0;38;2;122;112;112:*LICENSE=0;38;2;182;182;182:*INSTALL=0;38;2;0;0;0;48;2;230;219;116:*TODO.md=1:*COPYING=0;38;2;182;182;182:*.matlab=0;38;2;0;255;135:*.gradle=0;38;2;0;255;135:*.flake8=0;38;2;166;226;46:*.groovy=0;38;2;0;255;135:*.config=0;38;2;166;226;46:*.ignore=0;38;2;166;226;46:*.gemspec=0;38;2;166;226;46:*TODO.txt=1:*.desktop=0;38;2;166;226;46:*Makefile=0;38;2;166;226;46:*setup.py=0;38;2;166;226;46:*Doxyfile=0;38;2;166;226;46:*COPYRIGHT=0;38;2;182;182;182:*configure=0;38;2;166;226;46:*.fdignore=0;38;2;166;226;46:*.cmake.in=0;38;2;166;226;46:*.markdown=0;38;2;226;209;57:*.kdevelop=0;38;2;166;226;46:*README.md=0;38;2;0;0;0;48;2;230;219;116:*.rgignore=0;38;2;166;226;46:*INSTALL.md=0;38;2;0;0;0;48;2;230;219;116:*.gitignore=0;38;2;166;226;46:*CODEOWNERS=0;38;2;166;226;46:*README.txt=0;38;2;0;0;0;48;2;230;219;116:*.gitconfig=0;38;2;166;226;46:*Dockerfile=0;38;2;166;226;46:*SConstruct=0;38;2;166;226;46:*.scons_opt=0;38;2;122;112;112:*SConscript=0;38;2;166;226;46:*MANIFEST.in=0;38;2;166;226;46:*.gitmodules=0;38;2;166;226;46:*.synctex.gz=0;38;2;122;112;112:*LICENSE-MIT=0;38;2;182;182;182:*Makefile.am=0;38;2;166;226;46:*.travis.yml=0;38;2;230;219;116:*Makefile.in=0;38;2;122;112;112:*configure.ac=0;38;2;166;226;46:*CONTRIBUTORS=0;38;2;0;0;0;48;2;230;219;116:*.applescript=0;38;2;0;255;135:*appveyor.yml=0;38;2;230;219;116:*.fdb_latexmk=0;38;2;122;112;112:*.clang-format=0;38;2;166;226;46:*CMakeLists.txt=0;38;2;166;226;46:*INSTALL.md.txt=0;38;2;0;0;0;48;2;230;219;116:*CMakeCache.txt=0;38;2;122;112;112:*.gitattributes=0;38;2;166;226;46:*LICENSE-APACHE=0;38;2;182;182;182:*CONTRIBUTORS.md=0;38;2;0;0;0;48;2;230;219;116:*CONTRIBUTORS.txt=0;38;2;0;0;0;48;2;230;219;116:*.sconsign.dblite=0;38;2;122;112;112:*requirements.txt=0;38;2;166;226;46:*package-lock.json=0;38;2;122;112;112"
+function panther
+   ~/src/panther/_build/default/bin/panther.exe $argv
+end
+
+set PW_STORE $HOME/src/panther-store-keys
+
+function ped
+  panther edit $argv
+end
+
+function reduce-arg-to-key
+  # Replace whitespaces and '\'s with '-'.
+  set key (echo "$argv" | sed 's/\s/-/g')
+  echo "$key" | sed 's/\\\\/-/g'
+end
+
+function sync-pass
+  pushd "$PW_STORE"
+  /usr/bin/git pull origin master 1> /dev/null
+
+  popd
+end
+
+function list-pass
+  set key (reduce-arg-to-key $argv)
+  /usr/bin/ls "$PW_STORE"
+end
+
+function mod-pass
+  pushd "$PW_STORE"
+  /usr/bin/git pull origin master 1> /dev/null
+
+  set -l keys
+  set -l names
+
+  for arg in $argv
+    if test "$arg" = ""
+      # Couldn't find the key, list all existing ones.
+      list-pass
+
+    else
+      set key (reduce-arg-to-key $arg)
+
+      # Check if a file with the key exists.
+      if test -e "$PW_STORE"/$key
+        ped $key
+
+        # Add the key to the list of keys so that we can commit changes to repo.
+        set -a keys $key
+        set -a names $arg
+
+      else
+        # Since the key doesn't exist, ask if we want to create one.
+        while true
+
+          read -P "Password for '$arg' does not exist.  Create one manually? [Y/n] " create
+          set create (string lower $create)
+
+          if test "$create" = ""; or test "$create" = "y"
+            ped "$PW_STORE"/$key
+
+            # Add the key to the list of keys so that we can commit changes to repo.
+            set -a keys $key
+            set -a names $arg
+
+            break
+
+          else if test "$create" = "n"
+            break
+          end
+        end
+      end
+    end
+  end
+
+  # Commit changes if any to the remote repository.
+  if test "$keys" != ""
+    /usr/bin/git add $keys
+
+    set message (printf "Updates key(s) for %s." (string join ', ' $names))
+    /usr/bin/git commit -m "$message"
+
+    /usr/bin/git push origin master 1> /dev/null
+  end
+
+  # Switch back to the original directory.
+  popd
+end
+
+function dump-pass
+  pushd "$PW_STORE"
+
+  if test "$argv" = ""
+    list-pass
+  else
+    set key (reduce-arg-to-key $argv)
+
+    # Check if a file with the key already exists.
+    if test -e "$PW_STORE"/$key
+
+      # The first line contains the key, the rest is auxiliary info.
+      panther dec "$PW_STORE"/$key - | head -n1
+    else
+      echo "Could not find key for '$argv'.  Try `list-pass`."
+    end
+  end
+
+  popd
+end
+
+function get-pass
+  if test "$argv" = ""
+    list-pass
+  else
+    dump-pass $argv | /usr/bin/tr -d '\n\r' | /usr/bin/xclip -selection c
+  end
+end
+
+function new-pass
+  pushd "$PW_STORE"
+
+  # Make sure we're up to date with the remote repository.
+  /usr/bin/git pull origin master
+
+  set -l keys
+  set -l names
+
+  # Create a key for every input key.
+  for arg in $argv
+    set key (reduce-arg-to-key $arg)
+
+    # Check if a file with the key already exists, and if so, skip.
+    if test -e "$key"
+      echo "Password for '$key' already exists.  Did you mean `mod-pass '$key'?"
+    else
+      # Generate a key using preset rules.
+      /usr/bin/apg -a1 -n1 -m50 -MSNCL -E`~\(\)-_=+\[\]\{\}\\\|\;:\'\",\<.\>/\? | panther enc - $key
+      echo "Created new key, fetch using `get-pass "$key"`."
+
+      # Add the key to the list of keys so that we can commit changes to repo.
+      set -a keys $key
+      set -a names $arg
+    end
+  end
+
+  # Commit changes if any to the remote repository.
+  if test "$keys" != ""
+    /usr/bin/git add $keys
+
+    set message (printf "Adds key(s) for %s." (string join ', ' $names))
+    /usr/bin/git commit -m "$message"
+
+    /usr/bin/git push origin master
+  end
+
+  # Switch back to the original directory.
+  popd
+end
 
 # opam configuration
 source /home/klaus/.opam/opam-init/init.fish > /dev/null 2> /dev/null; or true

@@ -30,7 +30,7 @@ font pango:Fira Code Regular 10
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec /home/klaus/.local/kitty.app/bin/kitty
+bindsym $mod+Return exec /usr/bin/uxterm
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -179,7 +179,7 @@ client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color      
 # finds out, if available)
 bar {
 	position bottom
-        status_command i3blocks -c ~/.config/i3/blocks.conf
+        status_command /usr/bin/i3blocks -c ~/.config/i3/blocks.conf
 	font pango:Fira Code Regular 10
 	colors {
 		background $bg-color
@@ -205,7 +205,7 @@ exec --no-startup-id /usr/bin/start-pulseaudio-x11
 exec --no-startup-id /usr/bin/redshift
 
 bindsym $mod+shift+x exec /usr/bin/i3lock --color "$bg-color"
-exec --no-startup-id xss-lock -l /usr/share/doc/xss-lock/transfer-sleep-lock-generic-delay.sh
+exec --no-startup-id xss-lock # -l /usr/share/doc/xss-lock/transfer-sleep-lock-generic-delay.sh
 
 # Logoff / shutdown / reboot / hibernate / suspend options
 set $mode_power [l]ogoff | [s]hutdown | [r]eboot | [h]ibernate | s[u]spend
@@ -222,11 +222,11 @@ mode "$mode_power" {
 
 bindsym --release XF86PowerOff mode "$mode_power"
 
-# Multi-screen screenshots with scrot
-bindsym --release Print exec /usr/bin/scrot 'screenshot_%Y%m%d_%H%M%S.png' -e 'mkdir -p ~/screenshots && mv $f ~/screenshots && xclip -selection clipboard -t image/png -i ~/screenshots/`ls -1 -t ~/screenshots | head -1`' # All screens
+# # Multi-screen screenshots with scrot
+# bindsym --release Print exec /usr/bin/scrot 'screenshot_%Y%m%d_%H%M%S.png' -e 'mkdir -p ~/screenshots && mv $f ~/screenshots && xclip -selection clipboard -t image/png -i ~/screenshots/`ls -1 -t ~/screenshots | head -1`' # All screens
 
-# OSX-like area selection screenshots
-bindsym --release Shift+Print exec /usr/bin/scrot -s 'screenshot_%Y%m%d_%H%M%S.png' -e 'mkdir -p ~/screenshots && mv $f ~/screenshots && xclip -selection clipboard -t image/png -i ~/screenshots/`ls -1 -t ~/screenshots | head -1`' # Area selection
+# # OSX-like area selection screenshots
+# bindsym --release Shift+Print exec /usr/bin/scrot -s 'screenshot_%Y%m%d_%H%M%S.png' -e 'mkdir -p ~/screenshots && mv $f ~/screenshots && xclip -selection clipboard -t image/png -i ~/screenshots/`ls -1 -t ~/screenshots | head -1`' # Area selection
 
 # Set the compose key
-exec --no-startup-id setxkbmap -option compose:ralt
+exec --no-startup-id setxkbmap -option compose:ralt -option caps:escape
